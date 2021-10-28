@@ -25,3 +25,8 @@ we had to get access to the viewModel then we had to create the object of all th
 Solution   -> Instead of creating soo much we can simply using Dagger and using dagger the only thing we had to do is
 adding the @inject annotation that will tell dagger find the dependency.
 -> dagger also provide to scope our dependency which means we can control the lifetime.
+
+--------------------------------------------
+Background service can be killed by the android. but foreground service cannot be killed
+Whenever you had to show the notification you had to make a channel for android oreo or later.
+
