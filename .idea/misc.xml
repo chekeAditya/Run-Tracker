@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/bottom_nav_selector.xml" value="0.18888888888888888" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_add_black.xml" value="0.18888888888888888" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_close_white.xml" value="0.18888888888888888" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout-land/fragment_statistics.xml" value="0.1" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout-land/item_run.xml" value="0.20677083333333332" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/fragment_run.xml" value="0.18" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/fragment_setup.xml" value="0.2" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/fragment_statistics.xml" value="0.18" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/fragment_tracking.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
