@@ -12,6 +12,7 @@ import com.androidtracker.runningtracker.extras.Constants.ACTION_START_OR_RESUME
 import com.androidtracker.runningtracker.extras.Constants.MAP_ZOOM
 import com.androidtracker.runningtracker.extras.Constants.POLYLINE_COLOR
 import com.androidtracker.runningtracker.extras.Constants.POLYLINE_WIDTH
+import com.androidtracker.runningtracker.extras.TrackingUtility
 import com.androidtracker.runningtracker.services.Polyline
 import com.androidtracker.runningtracker.services.TrackingService
 import com.androidtracker.runningtracker.viewmodels.MainViewModel
@@ -28,6 +29,7 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking) {
     private var map: GoogleMap? = null
     private var isTracking = false
     private var pathPoints = mutableListOf<Polyline>()
+    private var curTimeInMillis = 0L
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -44,6 +46,7 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking) {
 
     //function to subscribe live dataObject
     private fun subscribeToObservers() {
+//        observable data for map
         TrackingService.isTracking.observe(viewLifecycleOwner, Observer {
             updateTracking(it)
         })
@@ -51,6 +54,12 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking) {
             pathPoints = it
             addLatestPolyLine()
             moveCameraToUser()
+        })
+//        observable data for the stopwatch
+        TrackingService.timeRunInMillis.observe(viewLifecycleOwner, Observer {
+            curTimeInMillis = it
+            val formattedTime = TrackingUtility.getFormattedStopWatchTime(curTimeInMillis,false)
+            tvTimer.text = formattedTime
         })
     }
 
