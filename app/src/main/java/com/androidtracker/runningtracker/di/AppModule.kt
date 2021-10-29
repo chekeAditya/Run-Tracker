@@ -31,6 +31,6 @@ object AppModule {
 
 }
 
-/*
-In the inside dagger we had to create our own ApplicationComponent but in new Dagger we don't to create it
+/**
+ * In the inside dagger we had to create our own ApplicationComponent but in new Dagger we don't to create it
  */
