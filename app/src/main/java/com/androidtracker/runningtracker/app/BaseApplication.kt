@@ -1,4 +1,4 @@
-package com.androidtracker.runningtracker
+package com.androidtracker.runningtracker.app
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
