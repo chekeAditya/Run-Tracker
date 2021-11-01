@@ -22,6 +22,8 @@ import com.androidtracker.runningtracker.extras.Constants.ACTION_START_OR_RESUME
 import com.androidtracker.runningtracker.extras.Constants.ACTION_STOP_SERVICE
 import com.androidtracker.runningtracker.extras.Constants.FASTEST_LOCATION_INTERVAL
 import com.androidtracker.runningtracker.extras.Constants.LOCATION_UPDATE_INTERVAL
+import com.androidtracker.runningtracker.extras.Constants.NOTIFICATION_CHANNEL_ID
+import com.androidtracker.runningtracker.extras.Constants.NOTIFICATION_CHANNEL_NAME
 import com.androidtracker.runningtracker.extras.Constants.NOTIFICATION_ID
 import com.androidtracker.runningtracker.extras.Constants.TIMER_UPDATE_INTERVAL
 import com.androidtracker.runningtracker.extras.TrackingUtility
@@ -44,7 +46,6 @@ typealias  Polylines = MutableList<Polyline>
 
 @AndroidEntryPoint
 class TrackingService : LifecycleService() {
-
     var isFirstRun = true
     var serviceKilled = false
 
@@ -268,8 +269,6 @@ class TrackingService : LifecycleService() {
                 notificationManager.notify(NOTIFICATION_ID, notification.build())
             }
         })
-
-
     }
 
     /*

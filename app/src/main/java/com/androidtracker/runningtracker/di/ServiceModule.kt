@@ -2,13 +2,12 @@ package com.androidtracker.runningtracker.di
 
 import android.app.PendingIntent
 import android.app.PendingIntent.FLAG_UPDATE_CURRENT
-import android.content.ContentProvider
 import android.content.Context
 import android.content.Intent
 import androidx.core.app.NotificationCompat
 import com.androidtracker.runningtracker.R
 import com.androidtracker.runningtracker.extras.Constants
-import com.androidtracker.runningtracker.ui.MainActivity
+import com.androidtracker.runningtracker.ui.activities.MainActivity
 import com.google.android.gms.location.FusedLocationProviderClient
 import dagger.Module
 import dagger.Provides

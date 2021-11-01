@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Item Finder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_finder">Item Finder</string>
+    <string name="item">Item</string>
+    <string name="finder">Finder.</string>
+    <string name="by_proceeding_i_agree_to_the_t_c"><![CDATA[By proceeding, I agree to the T&C]]></string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_phone_number">Continue With Phone Number</string>
+    <string name="item_name">Item Name</string>
+    <string name="stored_at">Stored At</string>
+    <string name="item_description">Item Description</string>
+    <string name="search_item">Search Item</string>
+</resources>
