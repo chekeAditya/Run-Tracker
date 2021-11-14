@@ -13,14 +13,13 @@
         style="@style/tvHeading1"
         android:fontFamily="@font/roboto_light"
         android:text="Run"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="48sp" />
 
     <TextView
         android:layout_margin="0dp"
         style="@style/tvHeading1"
-        android:textColor="@color/white"
-        android:textStyle="bold"
+        android:textColor="@color/black"
         android:fontFamily="@font/roboto"
         android:layout_marginTop="7dp"
         android:text="Tracker."

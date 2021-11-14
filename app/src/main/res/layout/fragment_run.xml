@@ -33,10 +33,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRuns"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/llLayoutRunFrag"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llLayoutRunFrag"
+        android:layout_marginTop="10dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"

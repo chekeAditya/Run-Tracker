@@ -6,7 +6,16 @@
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/bottom_nav_selector.xml" value="0.18888888888888888" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_add_black.xml" value="0.18888888888888888" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_close_white.xml" value="0.18888888888888888" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_delete.xml" value="0.20533333333333334" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_directions_run_black_24dp.xml" value="0.20533333333333334" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_graph.xml" value="0.20533333333333334" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20533333333333334" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_pause_black_24dp.xml" value="0.20533333333333334" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_settings.xml" value="0.20533333333333334" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable-v24/ic_stop_black_24dp.xml" value="0.20533333333333334" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable/circle.xml" value="0.23148148148148148" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20533333333333334" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable/ic_run.xml" value="0.20533333333333334" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable/splash_screen_gradient.xml" value="0.15876288659793814" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/drawable/top_heading.xml" value="0.14" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/font/roboto.xml" value="0.14074074074074075" />
@@ -14,13 +23,14 @@
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout-land/item_run.xml" value="0.20677083333333332" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/activity_splash_screen.xml" value="0.14" />
-        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/fragment_run.xml" value="0.14" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/fragment_run.xml" value="0.16" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/fragment_setting.xml" value="0.12777777777777777" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/fragment_setup.xml" value="0.16" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/fragment_statistics.xml" value="0.1" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/fragment_tracking.xml" value="0.16" />
-        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/item_layout.xml" value="0.1" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/layout/item_layout.xml" value="0.16" />
         <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Development/Projects/Running App/version_2/app/src/main/res/menu/toolbar_tracking_menu.xml" value="0.19414414414414413" />
       </map>
     </option>
   </component>
