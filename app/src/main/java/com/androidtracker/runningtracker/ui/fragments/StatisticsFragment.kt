@@ -1,5 +1,6 @@
 package com.androidtracker.runningtracker.ui.fragments
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -23,31 +24,28 @@ class StatisticsFragment : Fragment(R.layout.fragment_statistics) {
         subscribeToObservers()
     }
 
-    private fun subscribeToObservers(){
+    private fun subscribeToObservers() {
         viewModel.totalTimeRun.observe(viewLifecycleOwner, Observer {
             it?.let {
                 val totalTimeRun = TrackingUtility.getFormattedStopWatchTime(it)
                 tvTotalTime.text = totalTimeRun
             }
         })
-
         viewModel.totalDistance.observe(viewLifecycleOwner, Observer {
             it?.let {
-                val km = it/1000f
+                val km = it / 1000f
                 val totalDistance = round(km * 10f) / 10f
                 val totalDistanceString = "${totalDistance}km"
                 tvTotalDistance.text = totalDistanceString
             }
         })
-
         viewModel.totalAvgSpeed.observe(viewLifecycleOwner, Observer {
             it?.let {
                 val avgSpeed = round(it * 10f) / 10f
-                val avgSpeedString = "${avgSpeed}km/hr"
+                val avgSpeedString = "${avgSpeed}km/h"
                 tvAverageSpeed.text = avgSpeedString
             }
         })
-
         viewModel.totalCaloriesBurned.observe(viewLifecycleOwner, Observer {
             it?.let {
                 val totalCalories = "${it}kcal"
@@ -55,5 +53,4 @@ class StatisticsFragment : Fragment(R.layout.fragment_statistics) {
             }
         })
     }
-
 }

@@ -6,15 +6,16 @@ import androidx.room.TypeConverter
 import java.io.ByteArrayOutputStream
 
 class Converters {
+
     @TypeConverter
-    fun toBitmap(byteArray: ByteArray):Bitmap{
-        return BitmapFactory.decodeByteArray(byteArray,0,byteArray.size)
+    fun toBitmap(bytes: ByteArray): Bitmap {
+        return BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
     }
 
     @TypeConverter
-    fun fromBitmap(bmp: Bitmap): ByteArray{
+    fun fromBitmap(bmp: Bitmap): ByteArray {
         val outputStream = ByteArrayOutputStream()
-        bmp.compress(Bitmap.CompressFormat.PNG,100,outputStream)
+        bmp.compress(Bitmap.CompressFormat.PNG, 100, outputStream)
         return outputStream.toByteArray()
     }
 }

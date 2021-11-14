@@ -31,3 +31,18 @@ class CancelTrackingDialog : DialogFragment() {
 
     }
 }
+/*
+fun CheckingPermissionIsEnabledOrNot(): Boolean {
+        val FirstPermissionResult =
+            ContextCompat.checkSelfPermission(requireContext(), permission.ACCESS_COARSE_LOCATION)
+        val SecondPermissionResult = ContextCompat.checkSelfPermission(
+            requireContext(),
+            permission.ACCESS_FINE_LOCATION
+        )
+        val ThirdPermissionResult = ContextCompat.checkSelfPermission(
+            requireContext(),
+            permission.ACCESS_BACKGROUND_LOCATION
+        )
+        return FirstPermissionResult == PackageManager.PERMISSION_GRANTED && SecondPermissionResult == PackageManager.PERMISSION_GRANTED && ThirdPermissionResult == PackageManager.PERMISSION_GRANTED
+    }
+ */

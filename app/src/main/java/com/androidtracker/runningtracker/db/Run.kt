@@ -14,7 +14,6 @@ data class Run(
     var timeInMillis: Long = 0L,
     var caloriesBurned: Int = 0
 ) {
-    @PrimaryKey
-    @ColumnInfo(name = "id")
+    @PrimaryKey(autoGenerate = true)
     var id: Int? = null
 }

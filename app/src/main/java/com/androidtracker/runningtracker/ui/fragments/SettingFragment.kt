@@ -16,6 +16,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class SettingFragment : Fragment(R.layout.fragment_setting) {
 
+
     @Inject
     lateinit var sharedPreferences: SharedPreferences
 
@@ -23,32 +24,31 @@ class SettingFragment : Fragment(R.layout.fragment_setting) {
         super.onViewCreated(view, savedInstanceState)
         loadFieldsFromSharedPref()
         btnApplyChanges.setOnClickListener {
-            val success = applyChangesToSharedPreferences()
-            if (success){
-                Snackbar.make(view,"Saved Changes",Snackbar.LENGTH_LONG).show()
-            }else{
-                Snackbar.make(view,"Please fill out all the fields",Snackbar.LENGTH_LONG).show()
+            val success = applyChangesToSharedPref()
+            if(success) {
+                Snackbar.make(view, "Saved changes", Snackbar.LENGTH_LONG).show()
+            } else {
+                Snackbar.make(view, "Please fill out all the fields", Snackbar.LENGTH_LONG).show()
             }
         }
     }
 
-
-    private fun loadFieldsFromSharedPref(){
-        val name = sharedPreferences.getString(KEY_NAME,"")
-        val weight = sharedPreferences.getFloat(KEY_WEIGHT,80f)
+    private fun loadFieldsFromSharedPref() {
+        val name = sharedPreferences.getString(KEY_NAME, "")
+        val weight = sharedPreferences.getFloat(KEY_WEIGHT, 80f)
         etName.setText(name)
         etWeight.setText(weight.toString())
     }
 
-    private fun applyChangesToSharedPreferences(): Boolean {
+    private fun applyChangesToSharedPref(): Boolean {
         val nameText = etName.text.toString()
         val weightText = etWeight.text.toString()
-        if (nameText.isEmpty() || weightText.isEmpty()) {
+        if(nameText.isEmpty() || weightText.isEmpty()) {
             return false
         }
         sharedPreferences.edit()
-            .putString(KEY_NAME,nameText)
-            .putFloat(KEY_WEIGHT,weightText.toFloat())
+            .putString(KEY_NAME, nameText)
+            .putFloat(KEY_WEIGHT, weightText.toFloat())
             .apply()
         val toolbarText = "Let's go $nameText"
         requireActivity().tvToolbarTitle.text = toolbarText
